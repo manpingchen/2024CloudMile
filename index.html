@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2024 CloudMile Solution Day</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="splide/splide-core.min.css" />
+    <link rel="stylesheet" href="splide/splide.min.css" />
+    <link rel="stylesheet" href="splide/splide-default.min.css" />
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav>
+        <a href="" class="logo"></a>
+        <ul class="desktop">
+          <li><a href="">與談貴賓</a></li>
+          <li><a href="">論壇議程</a></li>
+          <li><a href="">活動資訊</a></li>
+        </ul>
+        <a href="" class="book">立即報名</a>
+
+        <div class="burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+        <ul class="mobile">
+          <li><a href="">與談貴賓</a></li>
+          <li><a href="">論壇議程</a></li>
+          <li><a href="">活動資訊</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <section class="key-visual">
+        <div id="scene">
+          <div class="event-title" data-friction-x="0.05" data-depth="0.2"></div>
+          <div class="arrow" data-friction-x="0.01" data-depth="0.2"></div>
+          <div class="line" data-depth="0.1"></div>
+        </div>
+        <div class="summary">
+          <div class="content-container">
+            <h1>
+              從雲到端 混合 AI 大未來 <br />
+              2024 CloudMile Solution Day
+            </h1>
+            <div class="location-date">
+              <div class="detail">
+                <h4>時間</h4>
+                <h3>10/15 13:00～16:30<span>13:00 開放入場</span></h3>
+              </div>
+              <div class="detail">
+                <h4>地點</h4>
+                <h3>Le Méridien Taipei<span>台北寒舍艾美酒店 3F 翡翠廳</span></h3>
+              </div>
+            </div>
+          </div>
+          <div class="white-bg"></div>
+        </div>
+      </section>
+      <section class="announcement">
+        <div class="content-container">
+          <h1>AI 無所不在，<br />劃世代的經濟顛覆<br />即將到來！</h1>
+          <div class="content">
+            <p>
+              生成式 AI 應用持續落地開花，並強力引領全球產業發展；<br />
+              同時，更有不少企業將生成式 AI 視為轉型新利器，<br />
+              未來商業將整合軟硬體技術，不斷融合、擴增及爆發<br />
+              嶄新的生成式 AI 生態系應運而生！
+            </p>
+            <p>
+              從混合AI、數據及資安等最熱門議題<br />
+              分享最先進的產業趨勢、前沿技術與實際落地應用案例<br />
+              串聯雲端及基礎建設、大數據分析與機器學習<br />
+              2024 CloudMile Solution Day 邀請多位產官學界專家參與雲端 AI 應用科技盛會<br />
+              從技術到市場、服務到應用發掘更多混合式 AI 驅動的無限可能！
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="sale-point">
+        <h1>2024 年 AI 轉型年度盛會</h1>
+        <h3>混合 × AI × 數據 × 資安 × 永續</h3>
+        <div class="splide" id="sale-points" aria-label="sale-point-splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <h2>
+                  <span class="highlight">7</span>
+                  <span class="text">大技術專講<span class="sub-text">最新轉型技術解析</span></span>
+                </h2>
+                <img src="images/e1.png" alt="7大技術專講" width="892" height="502" />
+                <p>生成式 AI｜SecOps｜雲端資安託管｜ FinOps｜多雲管理｜大數據｜永續韌性</p>
+              </li>
+
+              <li class="splide__slide">
+                <h2>
+                  <span class="highlight">8</span>
+                  <span class="text">家技術展示<span class="sub-text">親身體驗創新科技</span></span>
+                </h2>
+                <img src="images/e1.png" alt="7大技術專講" width="892" height="502" />
+                <p>生成式 AI｜SecOps｜雲端資安託管｜ FinOps｜多雲管理｜大數據｜永續韌性</p>
+              </li>
+              <li class="splide__slide">
+                <h2>
+                  <span class="highlight">16</span>
+                  <span class="text">產官學領袖<span class="sub-text">解密 AI 轉型策略</span></span>
+                </h2>
+                <img src="images/e1.png" alt="7大技術專講" width="892" height="502" />
+                <p>生成式 AI｜SecOps｜雲端資安託管｜ FinOps｜多雲管理｜大數據｜永續韌性</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="guests special-guests">
+        <div class="guest-container">
+          <h1>大會特別貴賓</h1>
+          <div class="guest">
+            <div class="img-wrap" style="background-image: url('images/p1.png')"></div>
+            <div class="intro">
+              <h2>胡貝蒂</h2>
+              <h3>數位產業署副署長</h3>
+              <p>
+                從事公務20餘年，曾任職於基隆市稅捐稽徵處、行政院第五組、經濟部 促進投資聯合協調中心、經濟部工業局、經濟部中小企業處等單位。
+                著力於產業政策規劃研究、新創協助、社會創新、租稅獎勵、國際合作。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="guests topic-guests">
+        <div class="guest-container reverse">
+          <h1>大會主題演講</h1>
+          <div class="splide" aria-label="topic-guests" id="topic-guests">
+            <div class="splide__track">
+              <div class="splide__list">
+                <div class="splide__slide guest">
+                  <div class="img-wrap" style="background-image: url('images/p1.png')"></div>
+                  <div class="intro">
+                    <h2>胡貝蒂</h2>
+                    <h3>數位產業署副署長</h3>
+                    <p>
+                      從事公務20餘年，曾任職於基隆市稅捐稽徵處、行政院第五組、經濟部 促進投資聯合協調中心、經濟部工業局、經濟部中小企業處等單位。
+                      著力於產業政策規劃研究、新創協助、社會創新、租稅獎勵、國際合作。
+                    </p>
+                  </div>
+                </div>
+                <div class="splide__slide guest">
+                  <div class="img-wrap" style="background-image: url('images/p1.png')"></div>
+                  <div class="intro">
+                    <h2>胡貝蒂</h2>
+                    <h3>數位產業署副署長</h3>
+                    <p>
+                      從事公務20餘年，曾任職於基隆市稅捐稽徵處、行政院第五組、經濟部 促進投資聯合協調中心、經濟部工業局、經濟部中小企業處等單位。
+                      著力於產業政策規劃研究、新創協助、社會創新、租稅獎勵、國際合作。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="guests case-study-guests">
+        <div class="guest-container">
+          <h1>實戰案例對談</h1>
+          <div class="splide" aria-label="case-study-guests" id="case-study-guests">
+            <div class="splide__track">
+              <div class="splide__list">
+                <div class="splide__slide guest">
+                  <div class="img-wrap" style="background-image: url('images/p1.png')"></div>
+                  <div class="intro">
+                    <h2>胡貝蒂</h2>
+                    <h3>數位產業署副署長</h3>
+                    <p>
+                      從事公務20餘年，曾任職於基隆市稅捐稽徵處、行政院第五組、經濟部 促進投資聯合協調中心、經濟部工業局、經濟部中小企業處等單位。
+                      著力於產業政策規劃研究、新創協助、社會創新、租稅獎勵、國際合作。
+                    </p>
+                  </div>
+                </div>
+                <div class="splide__slide guest">
+                  <div class="img-wrap" style="background-image: url('images/p1.png')"></div>
+                  <div class="intro">
+                    <h2>胡貝蒂</h2>
+                    <h3>數位產業署副署長</h3>
+                    <p>
+                      從事公務20餘年，曾任職於基隆市稅捐稽徵處、行政院第五組、經濟部 促進投資聯合協調中心、經濟部工業局、經濟部中小企業處等單位。
+                      著力於產業政策規劃研究、新創協助、社會創新、租稅獎勵、國際合作。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="splide thumbnail"
+          aria-label="case-study-guests-thumbnail"
+          id="case-study-guests-thumbnail"
+        >
+          <div class="splide__track">
+            <div class="splide__list">
+              <div class="splide__slide guest">
+                <div class="img-wrap" style="background-image: url('images/p1.png')"></div>
+                <div class="intro">
+                  <h2>胡貝蒂</h2>
+                  <h3>數位產業署副署長</h3>
+                </div>
+              </div>
+              <div class="splide__slide guest">
+                <div class="img-wrap" style="background-image: url('images/p1.png')"></div>
+                <div class="intro">
+                  <h2>胡貝蒂</h2>
+                  <h3>數位產業署副署長</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="guests tech-guests">
+        <div class="guest-container reverse">
+          <h1>技術焦點專講</h1>
+          <div class="splide" aria-label="tech-guests" id="tech-guests">
+            <div class="splide__track">
+              <div class="splide__list">
+                <div class="splide__slide guest">
+                  <div class="img-wrap" style="background-image: url('images/p1.png')"></div>
+                  <div class="intro">
+                    <h2>胡貝蒂</h2>
+                    <h3>數位產業署副署長</h3>
+                    <p>
+                      從事公務20餘年，曾任職於基隆市稅捐稽徵處、行政院第五組、經濟部 促進投資聯合協調中心、經濟部工業局、經濟部中小企業處等單位。
+                      著力於產業政策規劃研究、新創協助、社會創新、租稅獎勵、國際合作。
+                    </p>
+                  </div>
+                </div>
+                <div class="splide__slide guest">
+                  <div class="img-wrap" style="background-image: url('images/p1.png')"></div>
+                  <div class="intro">
+                    <h2>胡貝蒂</h2>
+                    <h3>數位產業署副署長</h3>
+                    <p>
+                      從事公務20餘年，曾任職於基隆市稅捐稽徵處、行政院第五組、經濟部 促進投資聯合協調中心、經濟部工業局、經濟部中小企業處等單位。
+                      著力於產業政策規劃研究、新創協助、社會創新、租稅獎勵、國際合作。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="splide thumbnail" aria-label="tech-guests-thumbnail" id="tech-guests-thumbnail">
+          <div class="splide__track">
+            <div class="splide__list">
+              <div class="splide__slide guest">
+                <div class="img-wrap" style="background-image: url('images/p1.png')"></div>
+                <div class="intro">
+                  <h2>胡貝蒂</h2>
+                  <h3>數位產業署副署長</h3>
+                </div>
+              </div>
+              <div class="splide__slide guest">
+                <div class="img-wrap" style="background-image: url('images/p1.png')"></div>
+                <div class="intro">
+                  <h2>胡貝蒂</h2>
+                  <h3>數位產業署副署長</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="agenda">
+        <h1>AGENDA 論壇議程</h1>
+        <div class="event">
+          <p class="time-slot">13:00-13:30</p>
+          <div class="detail">
+            <h3>來賓報導</h3>
+          </div>
+        </div>
+        <div class="event">
+          <p class="time-slot">13:00-13:30</p>
+          <div class="detail">
+            <h3>開場致詞</h3>
+            <ul class="speakers">
+              <li>
+                Spencer Liu <span class="company">公司名稱</span><span class="title">頭銜</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script>
+    var scene = document.getElementById("scene");
+    var parallaxInstance = new Parallax(scene);
+
+    function toggleMenu() {
+      document.querySelector("ul.mobile").classList.toggle("show");
+      document.querySelector(".burger").classList.toggle("active");
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      new Splide("#sale-points", {
+        type: "loop",
+        perPage: 1,
+        pagination: false,
+        padding: "33%",
+        updateOnMove: true,
+      }).mount();
+
+      new Splide("#topic-guests", {
+        perPage: 1,
+        pagination: false,
+        updateOnMove: true,
+      }).mount();
+
+      const caseStudyMain = new Splide("#case-study-guests", {
+        perPage: 1,
+        pagination: false,
+        updateOnMove: true,
+      });
+
+      const caseStudyThumbnail = new Splide("#case-study-guests-thumbnail", {
+        fixedWidth: 210,
+        gap: 10,
+        rewind: true,
+        arrows: false,
+        pagination: false,
+        focus: "center",
+        isNavigation: true,
+        breakpoints: {
+          600: {
+            fixedWidth: 60,
+            fixedHeight: 44,
+          },
+        },
+      });
+
+      const techMain = new Splide("#tech-guests", {
+        perPage: 1,
+        pagination: false,
+        updateOnMove: true,
+      });
+
+      const techThumbnail = new Splide("#tech-guests-thumbnail", {
+        fixedWidth: 210,
+        gap: 10,
+        rewind: true,
+        arrows: false,
+        pagination: false,
+        focus: "center",
+        isNavigation: true,
+        breakpoints: {
+          600: {
+            fixedWidth: 60,
+            fixedHeight: 44,
+          },
+        },
+      });
+
+      caseStudyMain.sync(caseStudyThumbnail);
+      caseStudyMain.mount();
+      caseStudyThumbnail.mount();
+
+      techMain.sync(techThumbnail);
+      techMain.mount();
+      techThumbnail.mount();
+    });
+  </script>
+</html>
