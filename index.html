@@ -780,6 +780,14 @@
         pagination: false,
         updateOnMove: true,
         rewind: true,
+        breakpoints: {
+          600: {
+            perPage: 1.5,
+            type: "loop",
+            perMove: 1,
+            gap: 16,
+          },
+        },
       }).mount();
 
       new Splide("#media-reports", {
@@ -792,6 +800,9 @@
         breakpoints: {
           1024: {
             perPage: 2.5,
+          },
+          600: {
+            perPage: 1.5,
           },
         },
       }).mount();
@@ -815,8 +826,8 @@
         updateOnMove: true,
         breakpoints: {
           600: {
-            fixedWidth: 60,
-            fixedHeight: 44,
+            fixedWidth: 120,
+            gap: 8,
           },
         },
       });
@@ -841,8 +852,8 @@
         updateOnMove: true,
         breakpoints: {
           600: {
-            fixedWidth: 60,
-            fixedHeight: 44,
+            fixedWidth: 120,
+            gap: 8,
           },
         },
       });
