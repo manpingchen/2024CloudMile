@@ -12,19 +12,21 @@
   <body>
     <div class="nav-container">
       <nav>
-        <a href="" class="logo"></a>
+        <a href="#scene" class="logo"
+          ><img src="images/color-logo-cloudmile.png" alt="cloudmile logo" height="40" />
+        </a>
         <ul class="desktop">
-          <li><a href="">與談貴賓</a></li>
-          <li><a href="">論壇議程</a></li>
-          <li><a href="">活動資訊</a></li>
+          <li><a href="#special-guests">與談貴賓</a></li>
+          <li><a href="#agenda">論壇議程</a></li>
+          <li><a href="#event-detail">活動資訊</a></li>
         </ul>
-        <a href="" class="book">立即報名</a>
+        <a href="#book" class="book">立即報名</a>
 
         <div class="burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
         <ul class="mobile">
-          <li><a href="">與談貴賓</a></li>
-          <li><a href="">論壇議程</a></li>
-          <li><a href="">活動資訊</a></li>
+          <li><a href="#special-guests">與談貴賓</a></li>
+          <li><a href="#agenda">論壇議程</a></li>
+          <li><a href="#event-detail">活動資訊</a></li>
         </ul>
       </nav>
     </div>
@@ -111,7 +113,7 @@
           </div>
         </div>
       </section>
-      <section class="guests special-guests">
+      <section class="guests special-guests" id="special-guests">
         <div class="guest-container">
           <h1>大會特別貴賓</h1>
           <div class="guest">
@@ -486,7 +488,7 @@
           </div>
         </div>
       </section>
-      <section class="agenda">
+      <section class="agenda" id="agenda">
         <h1>AGENDA 論壇議程</h1>
         <div class="event">
           <p class="time-slot">13:00-13:30</p>
@@ -592,12 +594,13 @@
             <p class="name">CloudMile 帆布袋</p>
             <p class="note">限量發送 50 個</p>
           </div>
+          <div class="img-wrap"></div>
         </div>
       </section>
 
-      <section class="book">
+      <section class="book" id="book">
         <div class="content-container">
-          <div class="intro">
+          <div class="intro" id="event-detail">
             <h1>大會活動資訊</h1>
             <div class="location-date">
               <div class="detail">
@@ -652,10 +655,16 @@
                 <option value="energy">能源</option>
               </select>
             </div>
-            <div class="field">
+            <div class="field tracks">
               <label for="tracks">欲參加議程</label>
-              <input type="checkbox" name="tracks" id="track1" /><label for="track1">Track 1</label>
-              <input type="checkbox" name="tracks" id="track2" /><label for="track2">Track 2</label>
+              <div class="tracks">
+                <input type="checkbox" name="tracks" id="track1" /><label for="track1"
+                  >Track 1</label
+                >
+                <input type="checkbox" name="tracks" id="track2" /><label for="track2"
+                  >Track 2</label
+                >
+              </div>
             </div>
             <div class="agreement">
               <input type="checkbox" name="agreement" id="agreement" />
@@ -780,14 +789,7 @@
         pagination: false,
         updateOnMove: true,
         rewind: true,
-        breakpoints: {
-          600: {
-            perPage: 1.5,
-            type: "loop",
-            perMove: 1,
-            gap: 16,
-          },
-        },
+        type: "fade",
       }).mount();
 
       new Splide("#media-reports", {
@@ -797,6 +799,7 @@
         rewind: true,
         gap: 16,
         updateOnMove: true,
+        pagination: false,
         breakpoints: {
           1024: {
             perPage: 2.5,
