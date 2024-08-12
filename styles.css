@@ -1410,6 +1410,10 @@ p.copyright {
     margin: 0 auto;
   }
 
+  section.guests {
+    padding: 4rem 0;
+  }
+
   section.case-study-guests,
   section.tech-guests {
     background-size: 220%;
