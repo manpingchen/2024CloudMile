@@ -846,6 +846,7 @@ form .field input[type="text"],
 form .field input[type="tel"],
 form .field input[type="email"] {
   border: unset;
+  border-radius: 0;
   border-bottom: 1px solid #7692af;
   background: unset;
   flex: 1;
