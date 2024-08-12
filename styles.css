@@ -81,8 +81,8 @@ nav ul li {
 
 nav ul li a {
   color: black;
-  letter-spacing: 0.05rem;
-  font-weight: bold;
+  letter-spacing: 0.35rem;
+  font-weight: 500;
 }
 
 a.book {
@@ -1064,9 +1064,7 @@ p.copyright {
     height: 54px;
     line-height: 1.6rem;
   }
-}
 
-@media screen and (max-width: 1024px) {
   nav {
     margin: 0 1rem;
   }
