@@ -792,7 +792,7 @@ section.book {
 section.book .intro {
   display: flex;
   flex-direction: column;
-  padding: 6rem 2rem;
+  padding: 10rem 2rem;
   padding-left: calc(50% - var(--main-width) / 2);
   background: url(images/book-o.png) no-repeat top center;
   background-size: cover;
@@ -827,11 +827,11 @@ section.book .location-date h3 span {
 
 .form {
   flex: 2;
-  padding: 6rem 2rem 3rem;
+  padding: 10rem 2rem 3rem;
   width: calc(100% - var(--summary-title-width));
   padding-right: calc(50% - var(--main-width) / 2);
   padding-left: 2rem;
-  background: url(images/book-w.png) no-repeat top right;
+  background: url(images/book-w.png) no-repeat top left;
   background-size: cover;
 }
 
