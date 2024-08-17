@@ -644,6 +644,8 @@ section.agenda .event .detail {
   flex: 1;
   padding: 1rem;
   min-height: 60px;
+  display: block;
+  height: 100%;
 }
 
 section.agenda .event.break .detail {
@@ -659,18 +661,32 @@ section.agenda .event .detail h3 {
   font-size: 1.3rem;
 }
 
+section.agenda .event .detail h5 {
+  margin: 1rem 0;
+}
+
+section.agenda .event .detail h5 span {
+  background: #e4ebef;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 section.agenda .event .detail ul.speakers {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  border-left: 5px solid #eec322;
   margin-top: 0.5rem;
 }
 
 section.agenda .event .detail ul.speakers li {
+  border-left: 3px solid #eec322;
   padding-left: 0.75rem;
+  font-weight: 500;
 }
-
+ul.speakers li .company,
+ul.speakers li .title {
+  font-weight: normal;
+}
 section.agenda .tracks {
   display: flex;
   flex-direction: row;
