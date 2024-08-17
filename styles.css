@@ -568,6 +568,10 @@ section.tech-guests {
   font-size: 0.785rem;
   font-weight: normal;
   text-align: center;
+  word-break: keep-all;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.1rem;
 }
 
 /* SPLIDE */
@@ -1391,6 +1395,9 @@ p.copyright {
   .thumbnail .img-wrap {
     width: 120px;
     height: 90px;
+  }
+  .thumbnail .intro h3 span {
+    display: block;
   }
   section.gifts .content-container {
     width: 100%;
