@@ -518,6 +518,11 @@ section.tech-guests {
   font-size: 3rem;
   margin-bottom: 0.75rem;
 }
+
+.guest-container .guest h4 {
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+}
 .guest-container .guest h3 {
   font-size: 1.35rem;
   margin-bottom: 1rem;
@@ -752,18 +757,21 @@ ul.tracks-detail > li ul.speakers li .company {
 section.gifts {
   background: url("./images/gift-bg.png") no-repeat center 60%;
   background-size: cover;
-  padding: 1rem 0 8rem;
+  padding: 1rem 0 4rem;
 }
 
 section.gifts .content-container {
   height: auto;
   align-items: center;
-  width: 600px;
+  width: 680px;
+  gap: 2rem;
 }
 
 section.gifts .title {
   color: white;
   letter-spacing: 0.025rem;
+  position: relative;
+  top: -1rem;
 }
 
 section.gifts .title .subtitle {
@@ -788,7 +796,7 @@ section.gifts .title .note {
 }
 
 section.gifts .img-wrap {
-  background: url(images/earlybird-gift.png) no-repeat bottom center;
+  background: url(images/earlybird-gift.png) no-repeat 120% center;
   background-size: contain;
   width: 400px;
   height: 400px;
