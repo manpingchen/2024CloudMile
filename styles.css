@@ -606,7 +606,7 @@ section.tech-guests {
 .guest-container.reverse .splide__arrows {
   position: absolute;
   right: -13.5rem;
-  top: 13rem;
+  top: 15rem;
 }
 
 .guest-container.reverse .splide__arrow--prev {
