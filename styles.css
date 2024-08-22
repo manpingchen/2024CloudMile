@@ -448,6 +448,7 @@ section.guests {
   background-position: left center;
   background-size: cover;
   padding: 6rem 0;
+  overflow: hidden;
 }
 
 section.guests .splide__track {
@@ -495,6 +496,7 @@ section.tech-guests {
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 7px 8px 20px #4c4c4eb2;
+  background-color: white;
 }
 
 .guest-container .guest {
@@ -767,8 +769,21 @@ section.gifts {
 section.gifts .content-container {
   height: auto;
   align-items: center;
-  width: 680px;
+  width: 800px;
   gap: 2rem;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+
+section.gifts .content-container.three-gifts {
+  flex-direction: column;
+}
+
+section.gifts .content-container.three-gifts .imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 section.gifts .title {
@@ -776,6 +791,7 @@ section.gifts .title {
   letter-spacing: 0.025rem;
   position: relative;
   top: -1rem;
+  max-width: 350px;
 }
 
 section.gifts .title .subtitle {
@@ -787,21 +803,44 @@ section.gifts .title h1 {
   width: max-content;
 }
 
+section.gifts .content-container.three-gifts .title {
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+}
+section.gifts .content-container.three-gifts .title h1 {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
 section.gifts .title .name {
   font-size: 1.45rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
-
+section.gifts .content-container.three-gifts .name {
+  color: white;
+  width: 350px;
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 1.45rem;
+  margin: 0 auto;
+}
+section.gifts .content-container.three-gifts .name span {
+  display: block;
+  font-size: 0.785rem;
+}
 section.gifts .title .note {
   background: rgba(0, 0, 0, 0.5);
-  padding: 0.25rem 2rem;
+  padding: 0.25rem 1rem;
+  margin-bottom: 1rem;
   display: inline-block;
 }
 
 section.gifts .img-wrap {
-  background: url(images/earlybird-gift.png) no-repeat 120% center;
-  background-size: contain;
+  background: url(images/earlybird-gift.png) no-repeat 70px center;
+  background-size: 300px;
   width: 400px;
   height: 400px;
 }
@@ -1048,6 +1087,7 @@ footer .logos .logo-list {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 footer .logos .logo-list img {
@@ -1276,6 +1316,14 @@ p.copyright {
   .splide__arrow--next {
     right: 1rem !important;
   }
+
+  section.gifts .content-container .img-wrap {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-position: 50px center;
+    background-size: 250px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1352,6 +1400,27 @@ p.copyright {
 
   p.copyright {
     text-align: center;
+  }
+  section.gifts .content-container {
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  section.gifts .content-container.three-gifts .imgs {
+    flex-direction: column;
+  }
+
+  section.gifts .content-container .title,
+  section.gifts .content-container .title h1,
+  section.gifts .content-container .title .name {
+    text-align: center;
+    display: block;
+    width: unset;
+  }
+
+  section.gifts .content-container .name {
+    width: 280px;
   }
 }
 
@@ -1464,8 +1533,8 @@ p.copyright {
 
   section.case-study-guests,
   section.tech-guests {
-    background-size: 220%;
-    background-position: center 90%;
+    background-size: 280%;
+    background-position: center 100%;
   }
 
   .guest-container {
@@ -1540,8 +1609,25 @@ p.copyright {
     flex-direction: column;
     padding-top: 5rem;
   }
-
+  section.gifts .content-container.three-gifts .title {
+    width: 300px;
+  }
+  section.gifts .content-container.three-gifts .title p span {
+    display: block;
+  }
   form input {
     padding: 0.5rem 0;
+  }
+
+  section.book .location-date {
+    flex-direction: column;
+  }
+
+  section.agenda .event .tracks-detail .detail h5 {
+    line-height: 1.5em;
+  }
+  section.agenda .event .tracks-detail .detail h5 span {
+    display: block;
+    margin-bottom: 0.5rem;
   }
 }
