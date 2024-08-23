@@ -464,13 +464,12 @@ section.topic-guests {
 }
 
 section.case-study-guests {
-  background-image: url("images/b-bg.png");
-  background-position: right center;
+  background-image: url("images/w-bg.png");
 }
 
 section.tech-guests {
-  background-image: url("images/w-bg.png");
-  background-position: -20% center;
+  background-position: center center;
+  background-image: url("images/b-bg.png");
 }
 
 .guest-container {
@@ -508,7 +507,7 @@ section.tech-guests {
 }
 
 .guest-container .intro {
-  width: 400px;
+  width: 470px;
 }
 
 .guest-container.reverse,
@@ -1119,7 +1118,7 @@ p.copyright {
   top: -11rem;
 }
 
-.tech-guests .thumbnail .splide__arrows {
+.case-study-guests .thumbnail .splide__arrows {
   position: absolute;
   right: calc(50% - 440px);
   left: unset;
@@ -1253,6 +1252,7 @@ p.copyright {
   }
   section.case-study-guests {
     background-image: url(images/m-b-bg.png);
+    background-position: -20% center;
   }
 
   section.tech-guests {
@@ -1323,6 +1323,13 @@ p.copyright {
     margin: 0 auto;
     background-position: 50px center;
     background-size: 250px;
+  }
+  section.agenda .event .tracks-detail .detail h5 {
+    line-height: 1.5em;
+  }
+  section.agenda .event .tracks-detail .detail h5 span {
+    display: block;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -1462,8 +1469,8 @@ p.copyright {
   }
 
   .thumbnail .img-wrap {
-    width: 120px;
-    height: 90px;
+    width: 140px;
+    height: 95px;
   }
   .thumbnail .intro h3 span {
     display: block;
@@ -1621,13 +1628,5 @@ p.copyright {
 
   section.book .location-date {
     flex-direction: column;
-  }
-
-  section.agenda .event .tracks-detail .detail h5 {
-    line-height: 1.5em;
-  }
-  section.agenda .event .tracks-detail .detail h5 span {
-    display: block;
-    margin-bottom: 0.5rem;
   }
 }
