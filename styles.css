@@ -529,9 +529,16 @@ section.tech-guests {
   margin-bottom: 1rem;
 }
 
-.guest-container .guest p {
+.guest-container .guest p,
+.guest-container .guest ul li {
   font-size: 1rem;
   color: gray;
+}
+
+.guest-container .guest ul li {
+  list-style: disc;
+  margin-left: 15px;
+  line-height: 1.65em;
 }
 
 .guest-container .splide__slide:not(.is-active) .img-wrap {
@@ -557,6 +564,11 @@ section.tech-guests {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  background-color: white;
+}
+.thumbnail .intro {
+  width: 96%;
+  margin: 0 auto;
 }
 
 .thumbnail .intro h2 {
@@ -569,7 +581,6 @@ section.tech-guests {
   font-size: 0.785rem;
   font-weight: normal;
   text-align: center;
-  word-break: keep-all;
   width: 90%;
   margin: 0 auto;
   line-height: 1.1rem;
@@ -757,6 +768,11 @@ ul.tracks-detail > li ul.speakers li {
 
 ul.tracks-detail > li ul.speakers li .company {
   margin-top: 0.25rem;
+}
+
+ul.tracks-detail > li ul.speakers li .company,
+ul.tracks-detail > li ul.speakers li .title {
+  font-size: 0.785rem;
 }
 
 section.gifts {
@@ -1479,6 +1495,10 @@ p.copyright {
     width: 100%;
     flex-direction: column;
     padding-top: 5rem;
+  }
+
+  section.case-study-guests {
+    background-position: left center;
   }
 }
 
