@@ -1625,6 +1625,14 @@ p.copyright {
     top: -3rem !important;
   }
 
+  section.agenda .event.special .detail {
+    justify-content: flex-start;
+  }
+
+  section.agenda .event.special .detail h3 {
+    height: 147px;
+  }
+
   section.case-study-guests,
   section.tech-guests {
     padding-top: 4rem;
