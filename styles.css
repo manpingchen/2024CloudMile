@@ -396,7 +396,6 @@ section.sale-point h3 {
   margin-top: 1rem;
   text-align: center;
   width: 90%;
-  word-break: keep-all;
 }
 
 #sale-points .splide__slide.is-active h2 {
