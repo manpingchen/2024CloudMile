@@ -1095,7 +1095,8 @@ footer .logos h5 {
   font-size: 1rem;
   letter-spacing: 0.05rem;
   font-weight: normal;
-  width: 160px;
+  line-height: 50px;
+  width: 130px;
   flex-shrink: 0;
 }
 
@@ -1351,6 +1352,9 @@ p.copyright {
   section.agenda .event .tracks-detail .detail h5 span {
     display: block;
     margin-bottom: 0.5rem;
+  }
+  footer .logos {
+    align-items: flex-start;
   }
 }
 
