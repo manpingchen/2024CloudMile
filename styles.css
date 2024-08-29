@@ -395,9 +395,11 @@ section.sale-point h3 {
   color: white;
   margin-top: 1rem;
   text-align: center;
-  width: 90%;
+  width: 100%;
 }
-
+#sale-points .splide__slide p.mobile {
+  display: none;
+}
 #sale-points .splide__slide.is-active h2 {
   position: relative;
   top: -2rem;
@@ -1393,6 +1395,14 @@ p.copyright {
 
   section.sale-point h1 {
     padding: 0 1rem;
+  }
+
+  #sale-points .splide__slide p.pc {
+    display: none;
+  }
+
+  #sale-points .splide__slide p.mobile {
+    display: block;
   }
 
   .guest-container .intro {
