@@ -33,6 +33,9 @@
     </div>
 
     <main>
+      <a href="#book" class="fixed-book"
+        >立即報名 <img src="images/arrow.png" alt="" width="20"
+      /></a>
       <section class="key-visual">
         <div id="scene">
           <div class="event-title" data-friction-x="0.05" data-depth="0.2"></div>
@@ -219,6 +222,48 @@
                       以及初創企業工作，主導過多個雲端轉型項目。
                     </p>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="splide thumbnail"
+          aria-label="topic-guests-thumbnail"
+          id="topic-guests-thumbnail"
+        >
+          <div class="splide__track">
+            <div class="splide__list">
+              <div class="splide__slide guest">
+                <div class="img-wrap" style="background-image: url('images/chenlianggi.jpg')"></div>
+                <div class="intro">
+                  <h2>陳良基</h2>
+                  <h3>前科技部長</h3>
+                </div>
+              </div>
+
+              <div class="splide__slide guest">
+                <div
+                  class="img-wrap"
+                  style="background-image: url('images/yu.jpg'); background-position: center 24%"
+                ></div>
+                <div class="intro">
+                  <h2>余孝先</h2>
+                  <h3>財團法人工業技術研究院<br />執行副總暨總營運長<br />兼AI策略長</h3>
+                </div>
+              </div>
+              <div class="splide__slide guest">
+                <div class="img-wrap" style="background-image: url('images/liu.jpg')"></div>
+                <div class="intro">
+                  <h2>劉永信</h2>
+                  <h3>CloudMile 萬里雲集團<br />創辦人暨董事長</h3>
+                </div>
+              </div>
+              <div class="splide__slide guest">
+                <div class="img-wrap" style="background-image: url('images/michaelchen.jpg')"></div>
+                <div class="intro">
+                  <h2>Michael Chen</h2>
+                  <h3>CloudMile 萬里雲技術副總</h3>
                 </div>
               </div>
             </div>
@@ -525,6 +570,28 @@
                   <div
                     class="img-wrap"
                     style="
+                      background-image: url('images/tsai.png');
+                      background-position: 35% 19%;
+                      background-size: 100%;
+                    "
+                  ></div>
+                  <div class="intro">
+                    <h2>蔡祈岩</h2>
+                    <h3>台灣大哥大資訊長</h3>
+                    <p>
+                      台灣大哥大資訊長、IMA資訊經理人協會理事長、陽明交通大學兼任副教授。中南大學（中國）管理科學博士。
+                      國小開始寫程式、國中接案，是台灣第一批程式設計師
+                      。1990年代就讀交大資工系大一時開發出「決戰俄羅斯」遊戲，風靡亞洲狂銷近10萬套。曾任匯豐銀行中國高級副總裁、信義房屋集團資訊長、星展銀行臺灣科技長。曾獲2011
+                      年「中國最具價值資訊長」、2012年「中國優秀CIO」、2017年｢台灣傑出資訊長｣、2022年
+                      IMA「傑出資訊經理人」等殊榮。
+                      2022年2月正式加入台灣大哥大，肩負起集團IT轉型的重任。
+                    </p>
+                  </div>
+                </div>
+                <div class="splide__slide guest">
+                  <div
+                    class="img-wrap"
+                    style="
                       background-image: url('images/ma.jpg');
                       background-position: 35% 19%;
                       background-size: 250%;
@@ -597,6 +664,20 @@
                 <div class="intro">
                   <h2>高宏宇</h2>
                   <h3>國立成功大學<br />特聘教授兼<span>電資學院副院長</span></h3>
+                </div>
+              </div>
+              <div class="splide__slide guest">
+                <div
+                  class="img-wrap"
+                  style="
+                    background-image: url('images/tsai.png');
+                    background-position: 35% 20%;
+                    background-size: 120%;
+                  "
+                ></div>
+                <div class="intro">
+                  <h2>蔡祈岩</h2>
+                  <h3>台灣大哥大<br />資訊長</h3>
                 </div>
               </div>
               <div class="splide__slide guest">
@@ -886,7 +967,11 @@
                     <span class="company">CloudMile 萬里雲</span>
                     <span class="title">解決方案架構團隊主管</span>
                   </li>
-                  <li>產業代表</li>
+                  <li>
+                    蔡祈岩
+                    <span class="company">台灣大哥大</span>
+                    <span class="title">資訊長</span>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -1017,11 +1102,12 @@
             <div class="agreement">
               <input type="checkbox" name="agreement" id="agreement" />
               <p>
-                我已閱讀並同意 CloudMile<a href="https://mile.cloud/zh/privacy" target="_blank"
-                  >隱私權政策</a
-                >與<a href="https://mile.cloud/zh/personal-information-agreement " target="_blank"
-                  >個資同意書</a
-                >
+                我已閱讀並同意 CloudMile<a href="https://mile.cloud/zh/privacy" target="_blank">
+                  隱私權政策
+                </a>
+                與<a href="https://mile.cloud/zh/personal-information-agreement " target="_blank">
+                  個資同意書
+                </a>
               </p>
             </div>
             <button type="submit">立即報名</button>
@@ -1171,6 +1257,7 @@
         updateOnMove: true,
         rewind: true,
         type: "fade",
+        autoplay: true,
       }).mount();
 
       new Splide("#media-reports", {
@@ -1181,6 +1268,7 @@
         gap: 8,
         updateOnMove: true,
         pagination: false,
+        autoplay: true,
         breakpoints: {
           1024: {
             perPage: 2.5,
@@ -1191,6 +1279,32 @@
         },
       }).mount();
 
+      const topicThumbnail = new Splide("#topic-guests-thumbnail", {
+        fixedWidth: 210,
+        gap: 8,
+        rewind: true,
+        pagination: false,
+        focus: "center",
+        isNavigation: true,
+        updateOnMove: true,
+        autoplay: true,
+        breakpoints: {
+          660: {
+            fixedWidth: 140,
+            gap: 8,
+          },
+        },
+      });
+      const topicMain = new Splide("#topic-guests", {
+        perPage: 1,
+        type: "fade",
+        rewind: true,
+        pagination: false,
+        arrows: false,
+        updateOnMove: true,
+        autoplay: true,
+      });
+
       const caseStudyMain = new Splide("#case-study-guests", {
         perPage: 1,
         type: "fade",
@@ -1198,6 +1312,7 @@
         pagination: false,
         arrows: false,
         updateOnMove: true,
+        autoplay: true,
       });
 
       const caseStudyThumbnail = new Splide("#case-study-guests-thumbnail", {
@@ -1208,6 +1323,7 @@
         focus: "center",
         isNavigation: true,
         updateOnMove: true,
+        autoplay: true,
         breakpoints: {
           660: {
             fixedWidth: 140,
@@ -1223,6 +1339,7 @@
         pagination: false,
         arrows: false,
         updateOnMove: true,
+        autoplay: true,
       });
 
       const techThumbnail = new Splide("#tech-guests-thumbnail", {
@@ -1234,6 +1351,7 @@
         focus: "center",
         isNavigation: true,
         updateOnMove: true,
+        autoplay: true,
         breakpoints: {
           660: {
             fixedWidth: 140,
@@ -1249,6 +1367,10 @@
       techMain.sync(techThumbnail);
       techMain.mount();
       techThumbnail.mount();
+
+      topicMain.sync(topicThumbnail);
+      topicMain.mount();
+      topicThumbnail.mount();
     });
   </script>
 </html>
