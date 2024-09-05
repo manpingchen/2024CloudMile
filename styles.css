@@ -1623,6 +1623,7 @@ p.copyright {
     padding: 4rem 0;
   }
 
+  section.topic-guests,
   section.case-study-guests,
   section.tech-guests {
     background-size: 280%;
@@ -1643,7 +1644,7 @@ p.copyright {
 
   .topic-guests .splide {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .topic-guests .splide__arrows {
