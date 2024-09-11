@@ -1001,10 +1001,22 @@ form .field input[type="email"] {
 
 form .field .tracks {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 0.5rem;
   flex: 1;
   width: inherit;
+  flex-direction: column;
+}
+
+form .field .tracks > div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+form .field .tracks label {
+  width: auto;
 }
 
 input[type="checkbox"] {
